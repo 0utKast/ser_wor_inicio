@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Videotutoriales.com - Ejemplo de página web ara trabajar con Service Workers</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Trabajo con Service Workers">
+<meta name="author" content="JCN">
+
+<!-- Standard Favicon--> 
+<link rel="shortcut icon" href="images/favicon/favicon.ico">
+
+
+<!-- Bootstrap CSS Files -->
+<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+<!-- Custom Fonts Setup via Font-face CSS3 -->
+<link href="fonts/fonts.css" rel="stylesheet">
+<!-- CSS files for plugins -->
+<link href="stylesheets/animate.css" rel="stylesheet">
+<link href="stylesheets/slimmenu.css" rel="stylesheet">
+<link href="stylesheets/owl.carousel.css" rel="stylesheet">
+<link href="stylesheets/owl.theme.css" rel="stylesheet">
+<link href="stylesheets/venobox.css" rel="stylesheet" />
+<link href="stylesheets/slidingmenu.css" rel="stylesheet">
+<!-- Main Template Styles -->
+<link href="stylesheets/main.css" rel="stylesheet">
+<!-- Main Template BG Images -->
+<link href="stylesheets/main-bg.css" rel="stylesheet">
+<!-- Main Template Responsive Styles -->
+<link href="stylesheets/main-responsive.css" rel="stylesheet">
+<!-- Main Template Retina Optimizaton Rules -->
+<link href="stylesheets/main-retina.css" rel="stylesheet">
+<!-- LESS stylesheet for managing color presets -->
+<link rel="stylesheet/less" type="text/css" href="less/color.less">
+<!-- LESS JS engine-->
+<script src="less/less-1.5.0.min.js"></script>
+<!-- Google Web Fonts-->
+<link href='//fonts.googleapis.com/css?family=Raleway:400,300,700,900%7COpen+Sans:400,300,700,800%7CMontserrat:400,700' rel='stylesheet' type='text/css'>
+
+
+</head>
+
+
+<body>
+
+  <!-- Preloader
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div id="preloader"> 
+    <div id="status"></div> 
+  </div>
+
+  
+
+<!-- Mobile only Navigation : starts -->
+<nav class="menu" id="sm">
+<div class="sm-wrap">
+	<a href="index.html"><img data-no-retina alt="odin" title="odin" class="logo" src="images/logo-white.png"/></a>
+	<i class="icon-remove menu-close"></i>
+	<a href="index.html">Volver</a>
+</div>
+<!-- Navigation Trigger Button -->
+<div id="sm-trigger" class="hidden-lg"></div>
+</nav>
+<!-- Mobile only  Navigation : ends -->
+
+
+
+
+<!-- Master Wrap : starts -->
+<section id="mastwrap">
+
+ 
+
+
+
+
+<section class="white-bg">
+
+<!-- masthead-section (this nav bar is visible only on home page) : starts -->
+		<header id="intro-header" class="intro-header visible-lg">
+			<div class="container">
+				<div class="row">
+						<article class="col-md-3 text-left">
+						    	<img alt="odin" title="Service Workers" class="main-logo img-responsive" src="images/logo-dark.png"/>
+						</article>
+						<article class="col-md-9 text-right">
+						    	<ul class="standard-nav  standard-nav-dark-text visible-lg">
+								<li><a href="index.html">Volver</a></li>
+							</ul>
+						</article>
+				</div>
+			</div>
+		</header>
+		<!-- masthead-section:ends -->	
+
+
+				<div class="white-bg project-page-caps text-center">
+						<h2 class="dark pad-top-half">Trabajo con Service Workers</h2>
+						<h3 class="dark"><span>Videotutoriales.com / brand</span></h3>
+				</div>
+
+
+
+</section>
+
+
+
+
+<!-- masthead-section (this nav bar is initially hidden but will be visible only on inner pages) : starts -->
+<header id="standard-header" class="standard-header">
+
+	<div class="container">
+		<div class="row">
+				<article class="col-md-3 text-left">
+				    	<img alt="odin" title="odin" class="main-logo img-responsive" src="images/logo-dark.png"/>
+				</article>
+				<article class="col-md-9 text-right">
+				    	<ul class="standard-nav standard-nav-dark-text visible-lg">
+						<li><a href="index.html" class="highlighted" id="intro-linker">Go Back</a></li>
+					</ul>
+				</article>
+		</div>
+	</div>
+
+</header>
+<!-- masthead-section:ends -->
+
+
+
+
+<!-- inner-section : starts -->
+	<section id="project-page-carousel-wrap" class="inner-section project-page-carousel-wrap white-bg">
+
+<div class="container">
+	
+        	<!-- thumb-carousel : starts -->
+        	<div id="project-page-carousel" class="owl-carousel">
+          
+	          <div class="item">
+	          		<img data-no-retina alt="odin" title="odin" class="img-responsive" src="http://placehold.it/1500x1050"/>
+	          </div>
+	          <div class="item">
+	          		<img data-no-retina alt="odin" title="odin" class="img-responsive" src="http://placehold.it/1500x1050"/>
+	          </div>
+	          <div class="item">
+	          		<img data-no-retina alt="odin" title="odin" class="img-responsive" src="http://placehold.it/1500x1050"/>
+	          </div>
+        	</div>
+        	<!-- thumb-carousel : ends -->
+
+</div>
+        	</section>
+	<!-- inner-section : ends -->
+
+
+
+
+
+
+
+<section id="about" class="page about remove-pad-top white-bg">
+
+<div class="container pad-top-half">
+
+			<div class="item about-carousel-item">
+				<div class="row">
+					<article class="col-md-8 col-md-offset-2 main-caps text-center">
+						<h3 class="grey">Texto que se verá en la versión Online del sitio</h3>
+						<div class="liner color-bg"></div>
+						<h6 class="dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at malesuada mauris. Curabitur ut nisi efficitur, eleifend quam eu, fermentum turpis. Praesent volutpat cursus ornare. Aliquam luctus nisl quis sapien tristique, scelerisque consequat magna condimentum. Nunc nec dui quis est sollicitudin ornare. Mauris justo libero, dapibus vitae massa quis, posuere euismod quam. Donec sed orci augue. Morbi cursus risus sed sollicitudin varius. Duis eu volutpat. </h6>
+						<div class="welcome-button">
+							<a class="btn btn-odin btn-odin-color" href="#">Live Preview</a>
+						</div>
+
+					</article>
+				</div>
+			</div>
+			<!-- item:ends -->
+
+
+	
+</div>
+
+
+</section>
+
+
+
+
+
+<div class="promo-section intermediate-section action-text parallax">
+		    	
+	<div class="container">
+		<div class="row">
+				<article class="col-md-12 text-center">
+					<h1><span class="color">1438</span></h1>
+					<h2><span class="white">Amazing Projects Served So Far</span></h2>
+					<div class="welcome-button">
+						<a class="btn btn-odin btn-odin-color" href="#">Explore All</a>
+					</div>
+				</article>
+		</div>
+	</div>
+
+</div>
+
+
+
+
+
+</section>
+<!-- page-section : ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- page-section : starts -->
+<footer id="mastfoot" class="mastfoot white-bg">
+
+
+
+
+<!-- inner-section:starts -->
+<section class="inner-section foot-top">
+	<div class="container">
+		<div class="row">
+				<article class="col-md-12 text-center">
+				    	<ul class="foot-social">
+						<li><a href="#"><img data-no-retina alt="odin" title="odin" src="images/social/01.png" ></a></li>
+						<li><a href="#"><img data-no-retina alt="odin" title="odin" src="images/social/02.png" ></a></li>
+						<li><a href="#"><img data-no-retina alt="odin" title="odin" src="images/social/03.png" ></a></li>
+						<li><a href="#"><img data-no-retina alt="odin" title="odin" src="images/social/04.png" ></a></li>
+					</ul>
+				</article>
+		</div>
+		<div class="row">
+				<article class="col-md-12 text-center foot-logos">
+					<p class="credits">Ejemplo de página web para Videotutorial &copy; 2019</p>
+				</article>
+		</div>
+	</div>
+</section>
+<!-- inner-section:ends -->
+
+</footer>
+
+
+
+</section>
+<!-- Master Wrap : ends -->
+
+
+
+<!-- Core JS Libraries -->
+
+<script>
+
+	if('serviceWorker' in navigator){
+
+		console.log("El Navegador admite service workers");
+		window.addEventListener('load', function(){
+
+			navigator.serviceWorker.register('sw_offlinepage.js')
+		   
+		   .then(function(registration){
+
+			   console.log('Service worker registrado de modo correcto');
+			   console.log('Scope: ' + registration.scope)
+
+			}, function(error){
+
+				console.log('El registro del Service worker ha fallado');
+				console.log(error)
+
+			});
+
+		});
+
+	}
+
+
+</script>
+
+
+
+<script src="javascripts/libs/common.js"></script>
+<script src="bootstrap/js/bootstrap.js" ></script> 
+<!-- JS Custom Codes --> 
+<script src="javascripts/custom/custom-init.js" ></script> 
+<script src="javascripts/custom/main.js" ></script> 
+
+
+
+</body>
+</html>

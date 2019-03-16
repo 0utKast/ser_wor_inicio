@@ -268,7 +268,9 @@
 		console.log("El Navegador admite service workers");
 		window.addEventListener('load', function(){
 
-			navigator.serviceWorker.register('sw_offlinepage.js')
+			//navigator.serviceWorker.register('sw_offlinepage.js')
+			//navigator.serviceWorker.register('sw_offlinesite.js')
+			navigator.serviceWorker.register('sw_cachedsite.js')
 		   
 		   .then(function(registration){
 
